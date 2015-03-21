@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38BE48BA1AAB5BC20031B776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BE48B91AAB5BC20031B776 /* main.m */; };
+		38BE48BD1AAB5BC20031B776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BE48BC1AAB5BC20031B776 /* AppDelegate.m */; };
+		38BE48C31AAB5BC20031B776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BE48C11AAB5BC20031B776 /* Main.storyboard */; };
+		38BE48C51AAB5BC20031B776 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BE48C41AAB5BC20031B776 /* Images.xcassets */; };
+		38BE48C81AAB5BC20031B776 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38BE48C61AAB5BC20031B776 /* LaunchScreen.xib */; };
+		38BE48D41AAB5BC20031B776 /* formularioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BE48D31AAB5BC20031B776 /* formularioTests.m */; };
+		38BE48DF1AAB60390031B776 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BE48DE1AAB60390031B776 /* Person.m */; };
+		38BE48E51AAB64D70031B776 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BE48E41AAB64D70031B776 /* NameViewController.m */; };
+		38BE48EB1AAB6FD20031B776 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BE48EA1AAB6FD20031B776 /* EmailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38BE48CE1AAB5BC20031B776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38BE48AC1AAB5BC20031B776 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38BE48B31AAB5BC20031B776;
+			remoteInfo = formulario;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38BE48B41AAB5BC20031B776 /* formulario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formulario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BE48B81AAB5BC20031B776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BE48B91AAB5BC20031B776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38BE48BB1AAB5BC20031B776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38BE48BC1AAB5BC20031B776 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38BE48C21AAB5BC20031B776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38BE48C41AAB5BC20031B776 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		38BE48C71AAB5BC20031B776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		38BE48CD1AAB5BC20031B776 /* formularioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formularioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38BE48D21AAB5BC20031B776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BE48D31AAB5BC20031B776 /* formularioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = formularioTests.m; sourceTree = "<group>"; };
+		38BE48DD1AAB60390031B776 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		38BE48DE1AAB60390031B776 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		38BE48E31AAB64D70031B776 /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		38BE48E41AAB64D70031B776 /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		38BE48E91AAB6FD20031B776 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		38BE48EA1AAB6FD20031B776 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38BE48B11AAB5BC20031B776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BE48CA1AAB5BC20031B776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38BE48AB1AAB5BC20031B776 = {
+			isa = PBXGroup;
+			children = (
+				38BE48B61AAB5BC20031B776 /* formulario */,
+				38BE48D01AAB5BC20031B776 /* formularioTests */,
+				38BE48B51AAB5BC20031B776 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38BE48B51AAB5BC20031B776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48B41AAB5BC20031B776 /* formulario.app */,
+				38BE48CD1AAB5BC20031B776 /* formularioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38BE48B61AAB5BC20031B776 /* formulario */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48E21AAB61A30031B776 /* controller */,
+				38BE48E11AAB619C0031B776 /* model */,
+				38BE48E01AAB61940031B776 /* view */,
+				38BE48C41AAB5BC20031B776 /* Images.xcassets */,
+				38BE48B71AAB5BC20031B776 /* Supporting Files */,
+			);
+			path = formulario;
+			sourceTree = "<group>";
+		};
+		38BE48B71AAB5BC20031B776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48B81AAB5BC20031B776 /* Info.plist */,
+				38BE48B91AAB5BC20031B776 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38BE48D01AAB5BC20031B776 /* formularioTests */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48D31AAB5BC20031B776 /* formularioTests.m */,
+				38BE48D11AAB5BC20031B776 /* Supporting Files */,
+			);
+			path = formularioTests;
+			sourceTree = "<group>";
+		};
+		38BE48D11AAB5BC20031B776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48D21AAB5BC20031B776 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38BE48E01AAB61940031B776 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48C11AAB5BC20031B776 /* Main.storyboard */,
+				38BE48C61AAB5BC20031B776 /* LaunchScreen.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		38BE48E11AAB619C0031B776 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48DD1AAB60390031B776 /* Person.h */,
+				38BE48DE1AAB60390031B776 /* Person.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		38BE48E21AAB61A30031B776 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				38BE48BB1AAB5BC20031B776 /* AppDelegate.h */,
+				38BE48BC1AAB5BC20031B776 /* AppDelegate.m */,
+				38BE48E31AAB64D70031B776 /* NameViewController.h */,
+				38BE48E41AAB64D70031B776 /* NameViewController.m */,
+				38BE48E91AAB6FD20031B776 /* EmailViewController.h */,
+				38BE48EA1AAB6FD20031B776 /* EmailViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38BE48B31AAB5BC20031B776 /* formulario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BE48D71AAB5BC20031B776 /* Build configuration list for PBXNativeTarget "formulario" */;
+			buildPhases = (
+				38BE48B01AAB5BC20031B776 /* Sources */,
+				38BE48B11AAB5BC20031B776 /* Frameworks */,
+				38BE48B21AAB5BC20031B776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = formulario;
+			productName = formulario;
+			productReference = 38BE48B41AAB5BC20031B776 /* formulario.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38BE48CC1AAB5BC20031B776 /* formularioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38BE48DA1AAB5BC20031B776 /* Build configuration list for PBXNativeTarget "formularioTests" */;
+			buildPhases = (
+				38BE48C91AAB5BC20031B776 /* Sources */,
+				38BE48CA1AAB5BC20031B776 /* Frameworks */,
+				38BE48CB1AAB5BC20031B776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BE48CF1AAB5BC20031B776 /* PBXTargetDependency */,
+			);
+			name = formularioTests;
+			productName = formularioTests;
+			productReference = 38BE48CD1AAB5BC20031B776 /* formularioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38BE48AC1AAB5BC20031B776 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Cesar Brenes";
+				TargetAttributes = {
+					38BE48B31AAB5BC20031B776 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					38BE48CC1AAB5BC20031B776 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 38BE48B31AAB5BC20031B776;
+					};
+				};
+			};
+			buildConfigurationList = 38BE48AF1AAB5BC20031B776 /* Build configuration list for PBXProject "formulario" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38BE48AB1AAB5BC20031B776;
+			productRefGroup = 38BE48B51AAB5BC20031B776 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38BE48B31AAB5BC20031B776 /* formulario */,
+				38BE48CC1AAB5BC20031B776 /* formularioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38BE48B21AAB5BC20031B776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BE48C31AAB5BC20031B776 /* Main.storyboard in Resources */,
+				38BE48C81AAB5BC20031B776 /* LaunchScreen.xib in Resources */,
+				38BE48C51AAB5BC20031B776 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BE48CB1AAB5BC20031B776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38BE48B01AAB5BC20031B776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BE48EB1AAB6FD20031B776 /* EmailViewController.m in Sources */,
+				38BE48BD1AAB5BC20031B776 /* AppDelegate.m in Sources */,
+				38BE48DF1AAB60390031B776 /* Person.m in Sources */,
+				38BE48BA1AAB5BC20031B776 /* main.m in Sources */,
+				38BE48E51AAB64D70031B776 /* NameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BE48C91AAB5BC20031B776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38BE48D41AAB5BC20031B776 /* formularioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38BE48CF1AAB5BC20031B776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38BE48B31AAB5BC20031B776 /* formulario */;
+			targetProxy = 38BE48CE1AAB5BC20031B776 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38BE48C11AAB5BC20031B776 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38BE48C21AAB5BC20031B776 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38BE48C61AAB5BC20031B776 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38BE48C71AAB5BC20031B776 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38BE48D51AAB5BC20031B776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		38BE48D61AAB5BC20031B776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38BE48D81AAB5BC20031B776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = formulario/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38BE48D91AAB5BC20031B776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = formulario/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38BE48DB1AAB5BC20031B776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = formularioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/formulario.app/formulario";
+			};
+			name = Debug;
+		};
+		38BE48DC1AAB5BC20031B776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = formularioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/formulario.app/formulario";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38BE48AF1AAB5BC20031B776 /* Build configuration list for PBXProject "formulario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BE48D51AAB5BC20031B776 /* Debug */,
+				38BE48D61AAB5BC20031B776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38BE48D71AAB5BC20031B776 /* Build configuration list for PBXNativeTarget "formulario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BE48D81AAB5BC20031B776 /* Debug */,
+				38BE48D91AAB5BC20031B776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38BE48DA1AAB5BC20031B776 /* Build configuration list for PBXNativeTarget "formularioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38BE48DB1AAB5BC20031B776 /* Debug */,
+				38BE48DC1AAB5BC20031B776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38BE48AC1AAB5BC20031B776 /* Project object */;
+}
