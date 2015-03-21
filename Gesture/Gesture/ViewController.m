@@ -34,13 +34,38 @@
 
 
 -(void)addGestures{
+    [self addTapGesture];
+    [self addPanGesture];
+    [self addRotateGesture];
+}
+
+
+-(void)addRotateGesture{
+    
+    UIRotationGestureRecognizer *rotationGestureBanana = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotationActionBanana:)];
+    
+    UIRotationGestureRecognizer *rotationGestureMonkey = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotationActionMonkey:)];
+    
+    [self.monkeyImage addGestureRecognizer:rotationGestureMonkey];
+    [self.bananaImage addGestureRecognizer:rotationGestureBanana];
+}
+
+
+-(void)addPanGesture{
+    UIPanGestureRecognizer *panGestureBanana = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panActionBanana:)];
+    UIPanGestureRecognizer *panGestureMonkey = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panActionMonkey:)];
+    [self.monkeyImage addGestureRecognizer:panGestureMonkey];
+    [self.bananaImage addGestureRecognizer:panGestureBanana];
+}
+
+
+-(void)addTapGesture{
     UITapGestureRecognizer *tapGestureBanana = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapActionBanana:)];
-    
-        UITapGestureRecognizer *tapGestureMonkey = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapActionMonkey:)];
-    
+    UITapGestureRecognizer *tapGestureMonkey = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapActionMonkey:)];
     [self.monkeyImage addGestureRecognizer:tapGestureMonkey];
     [self.bananaImage addGestureRecognizer:tapGestureBanana];
 }
+
 
 -(void)tapActionMonkey:(UITapGestureRecognizer*)recognizer{
     self.soundPlayer = [self loadSound:@"risa"];
@@ -53,10 +78,37 @@
 }
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)panActionMonkey:(UIPanGestureRecognizer*)recognizer{
+    [self moveImage:recognizer];
 }
+
+-(void)panActionBanana:(UIPanGestureRecognizer*)recognizer{
+    [self moveImage:recognizer];
+}
+
+-(void)moveImage:(UIPanGestureRecognizer*)recognizer{
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+}
+
+
+-(void)rotationActionBanana:(UIRotationGestureRecognizer*)recognizer{
+    [self doRotationInImage:recognizer];
+}
+
+
+-(void)rotationActionMonkey:(UIRotationGestureRecognizer*)recognizer{
+    [self doRotationInImage:recognizer];
+}
+
+
+-(void)doRotationInImage:(UIRotationGestureRecognizer*)recognizer{
+    recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.rotation);
+    recognizer.rotation = 0;
+}
+
+
+
 
 @end
