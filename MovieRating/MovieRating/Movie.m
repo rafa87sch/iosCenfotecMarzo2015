@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Movie.m
 //  MovieRating
 //
 //  Created by Cesar Brenes on 3/21/15.
 //  Copyright (c) 2015 Cesar Brenes. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Movie.h"
 
-@interface ViewController : UIViewController
-
+@implementation Movie
 
 @end
-
