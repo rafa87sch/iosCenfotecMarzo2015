@@ -46,7 +46,7 @@
                         <viewControllerLayoutGuide type="top" id="rRK-Ti-Xa4"/>
                         <viewControllerLayoutGuide type="bottom" id="Cu9-Vx-tVr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NCd-Q1-Ij1">
+                    <view key="view" contentMode="scaleToFill" id="NCd-Q1-Ij1" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -83,6 +83,9 @@
                                 <exclude reference="OLN-3T-HMz"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <action selector="hideKeyboard:" destination="QuG-Az-PU7" eventType="touchUpInside" id="AZ4-uB-HYa"/>
+                        </connections>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -95,6 +98,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pC-iH-khL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1717" y="310"/>
+        </scene>
+        <!--Rating View Controller-->
+        <scene sceneID="zVd-RS-BRh">
+            <objects>
+                <viewController storyboardIdentifier="RatingViewController" id="Ik9-5U-Yb9" customClass="RatingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QHR-BB-Dgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Oe-p7-OBv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ft-8C-quN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2N-mv-VhF">
+                                <rect key="frame" x="16" y="102" width="288" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSQ-OS-1gw">
+                                <rect key="frame" x="0.0" y="194" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ik9-5U-Yb9" id="TEi-LL-KT0"/>
+                                    <outlet property="delegate" destination="Ik9-5U-Yb9" id="ZUD-hm-6FH"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="movieName" destination="p2N-mv-VhF" id="Dkn-TT-7XO"/>
+                        <outlet property="ratingPicker" destination="QSQ-OS-1gw" id="miX-Ns-H4p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWT-UG-F11" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="965"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UHG-xp-Rmr">

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MovieRating.xcodeproj">
+      location = "self:SocialMedia.xcodeproj">
    </FileRef>
 </Workspace>

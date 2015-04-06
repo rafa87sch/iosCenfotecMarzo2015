@@ -9,10 +9,14 @@
 #import "MovieTableViewController.h"
 #import "Movie.h"
 #import "MovieViewController.h"
+#import "RatingViewController.h"
+#import "MoviesCustomCell.h"
 
 
 static int NUMBER_OF_SECTION = 1;
 static NSString *CELL_IDENTIFIER = @"CELL";
+static NSString * CELL_ID = @"MoviesCustomCell";
+static CGFloat HEIGHT_OF_ROW = 70.0;
 
 
 
@@ -25,21 +29,18 @@ static NSString *CELL_IDENTIFIER = @"CELL";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initialize];
+    UINib *nib = [UINib nibWithNibName:CELL_ID bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:CELL_ID];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData];
 }
 
 
 -(void)initialize{
 //    initializo el array
     self.moviesArray = [NSMutableArray new];
-//    creo un objeto Movie y lo lleno
-    Movie *movieObject = [Movie new];
-    movieObject.name = @"Toy Story";
-    movieObject.categoryName = @"Animation Movie";
-    movieObject.year = 1995;
-    movieObject.rating = 0;
-    movieObject.count = 0;
-//    agrego dicho objecto al array
-    [self.moviesArray addObject:movieObject];
 }
 
 
@@ -55,24 +56,38 @@ static NSString *CELL_IDENTIFIER = @"CELL";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.moviesArray.count;
+    return 5;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return HEIGHT_OF_ROW;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_IDENTIFIER];
+    MoviesCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL_ID];
     
-    if (cell==nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CELL_IDENTIFIER];
-    }
     
     // Configure the cell...
     
-    Movie *movieObject = [self.moviesArray objectAtIndex:indexPath.row];
+   // Movie *movieObject = [self.moviesArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = movieObject.name;
+    cell.nameLabelEXAMPLE.text = @"DSDSD";
+    //cell.textLabel.text =
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //EXTRAIGO EL OBJETO MOVIE DEL ARRAY
+    Movie *movieSelectedObject = [self.moviesArray objectAtIndex:indexPath.row];
+    //CREO LA NUEVA VISTA A LA CUAL VOY A HACERLE EL PUSH
+    RatingViewController *ratingView = [self.storyboard instantiateViewControllerWithIdentifier:@"RatingViewController"];
+    //LE PASO EL OBJETO MOVIE EXTRAIDO ANTERIORMENTE A LA NUEVA VISTA
+    ratingView.movieObject = movieSelectedObject;
+    //HACEMOS UN PUSH A LA VISTA RATING VIEW CONTROLLER
+    [self.navigationController pushViewController:ratingView animated:YES];
+    
 }
 
 
@@ -122,6 +137,11 @@ static NSString *CELL_IDENTIFIER = @"CELL";
 
 - (IBAction)addMovieAction:(id)sender {
     MovieViewController *newView = [self.storyboard instantiateViewControllerWithIdentifier:@"MovieViewController"];
+    // PASO POR REFERENCIA
+    newView.movieArray = self.moviesArray;
+    // PASO CON UN OBJECTO NUEVO SIN REFERENCIA
+   // newView.movieArray = [[NSMutableArray alloc] initWithArray:self.moviesArray];
+    
     [self.navigationController pushViewController:newView animated:YES];
 }
 @end

@@ -13,7 +13,8 @@
 @property(nonatomic,strong) NSString *name;
 @property(nonatomic,strong) NSString *categoryName;
 @property(nonatomic) int year;
-@property(nonatomic) int rating;
+@property(nonatomic) float rating;
 @property(nonatomic) int count;
+@property(nonatomic) int totalRating;
 
 @end

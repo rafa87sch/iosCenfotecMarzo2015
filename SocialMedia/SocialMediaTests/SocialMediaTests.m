@@ -1,19 +1,19 @@
 //
-//  MovieRatingTests.m
-//  MovieRatingTests
+//  SocialMediaTests.m
+//  SocialMediaTests
 //
-//  Created by Cesar Brenes on 3/21/15.
+//  Created by Cesar Brenes on 3/23/15.
 //  Copyright (c) 2015 Cesar Brenes. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface MovieRatingTests : XCTestCase
+@interface SocialMediaTests : XCTestCase
 
 @end
 
-@implementation MovieRatingTests
+@implementation SocialMediaTests
 
 - (void)setUp {
     [super setUp];

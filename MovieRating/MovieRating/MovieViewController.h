@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *categoryName;
 @property (weak, nonatomic) IBOutlet UITextField *yearTextField;
+@property (strong, nonatomic) NSMutableArray *movieArray;
 
 @end

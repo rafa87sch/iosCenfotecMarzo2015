@@ -7,6 +7,10 @@
 //
 
 #import "MovieViewController.h"
+#import "Movie.h"
+
+//aqui declaro todas mis constantes
+const static int ZERO = 0;
 
 @interface MovieViewController ()
 
@@ -16,7 +20,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addMovie)];
+    
+    self.navigationItem.rightBarButtonItem = addButton;
+    
     // Do any additional setup after loading the view.
+}
+
+-(void)addMovie{
+    //creamos el objeto de tipo movie
+    Movie *movieToAdd = [Movie new];
+    //LO LLENAMOS CON LA INFORMACIÓN SUMINISTRADA
+    //POR EL USUARIO
+    movieToAdd.name = self.nameTextField.text;
+    movieToAdd.categoryName = self.categoryName.text;
+    movieToAdd.year = [self.yearTextField.text intValue];
+    movieToAdd.count = ZERO;
+    movieToAdd.rating = ZERO;
+    movieToAdd.totalRating = ZERO;
+    //AGREGO EL OBJETO AL ARRAY
+    [self.movieArray addObject:movieToAdd];
+    //ME DEVUELVO A LA VISTA ANTERIOR
+    [self.navigationController  popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +58,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)hideKeyboard:(id)sender {
+    [self.view endEditing:YES];
+}
 
 @end
