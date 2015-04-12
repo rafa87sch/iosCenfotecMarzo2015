@@ -56,7 +56,7 @@ static CGFloat HEIGHT_OF_ROW = 70.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return self.moviesArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -70,11 +70,10 @@ static CGFloat HEIGHT_OF_ROW = 70.0;
     
     // Configure the cell...
     
-   // Movie *movieObject = [self.moviesArray objectAtIndex:indexPath.row];
+    Movie *movieObject = [self.moviesArray objectAtIndex:indexPath.row];
     
-    cell.nameLabelEXAMPLE.text = @"DSDSD";
-    //cell.textLabel.text =
-    
+    cell.nameLabelEXAMPLE.text = movieObject.name;
+    cell.rateLabel.text = [NSString stringWithFormat:@"%.1f",movieObject.rating];
     return cell;
 }
 
